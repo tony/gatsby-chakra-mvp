@@ -1,0 +1,6 @@
+.cache
+public
+node_modules
+package.json
+package-lock.json
+gatsby-plugin-chakra-ui/

@@ -1,0 +1,76 @@
+{
+  "name": "@website/shared-ui",
+  "description": "Shared React components for chakra + gatsby",
+  "version": "0.4.0-alpha.27",
+  "main": "dist/index.js",
+  "module": "src/index.ts",
+  "license": "MIT",
+  "keywords": [
+    "gatsby",
+    "chakra",
+    "chakra-ui",
+    "react",
+    "components"
+  ],
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tony/shared-ui"
+  },
+  "scripts": {
+    "clean": "rimraf dist pkg",
+    "pika": "pika",
+    "build": "pika build",
+    "bootstrap": "echo 'NOOP'",
+    "gen:theme-typings": "chakra-cli tokens src/@chakra-ui/gatsby-plugin/theme.ts",
+    "postinstall:disabled": "npm run gen:theme-typings",
+    "ncu": "ncu",
+    "lint": "yarn run lint:source && yarn run lint:format",
+    "lint:source": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js,.jsx",
+    "lint:format": "prettier --check --ignore-path .gitignore '**/*.{ts,tsx,js,jsx,json}'",
+    "format": "prettier --write --ignore-path .gitignore '**/*.{ts,tsx,js,jsx,json}'",
+    "version": "npm run build"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^1.6.5",
+    "@chakra-ui/theme": "^1.9.2",
+    "@emotion/react": "^11.4.1",
+    "gatsby": "^3.13.0",
+    "gatsby-plugin-next-seo": "^1.8.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet-async": "^1.1.2",
+    "typescript": "<4.3"
+  },
+  "devDependencies": {
+    "@chakra-ui/cli": "^1.5.0"
+  },
+  "optionalDependencies": {
+    "prettier": "^2.3.2"
+  },
+  "@pika/pack": {
+    "pipeline": [
+      [
+        "@pika/plugin-standard-pkg",
+        {
+          "exclude": [
+            "__tests__/**/*"
+          ]
+        }
+      ],
+      [
+        "@pika/plugin-build-node"
+      ],
+      [
+        "@pika/plugin-build-web"
+      ],
+      [
+        "@pika/plugin-build-types"
+      ]
+    ]
+  },
+  "gitHead": "cd14c651c8d391022bc4e90c4e8fb03bb71f0c84"
+}

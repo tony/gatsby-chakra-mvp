@@ -1,0 +1,9 @@
+.cache
+public
+node_modules
+package.json
+package-lock.json
+src/gatsby-plugin-chakra-ui
+packages/shared-ui/src/gatsby-plugin-chakra-ui
+src/__generated__/gatsby-graphql.ts
+**/*.d.ts

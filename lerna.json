@@ -1,0 +1,17 @@
+{
+  "lerna": "3.22.1",
+  "packages": [
+    "packages/*"
+  ],
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "command": {
+    "run": {
+      "private": false
+    },
+    "version": {
+      "private": false
+    }
+  },
+  "version": "0.4.0-alpha.27"
+}

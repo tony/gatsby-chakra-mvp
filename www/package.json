@@ -1,0 +1,81 @@
+{
+  "name": "www",
+  "private": true,
+  "description": "My personality theories website",
+  "version": "0.1.0",
+  "author": "Tony",
+  "dependencies": {
+    "@chakra-ui/gatsby-plugin": "^2.0.1",
+    "@elastic/elasticsearch": "^7.14.1",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@tippyjs/react": "^4.2.5",
+    "base64id": "^2.0.0",
+    "framer-motion": "^4.1.17",
+    "gatsby": "3.13.0",
+    "gatsby-plugin-catch-links": "^3.13.0",
+    "gatsby-plugin-exclude": "^1.0.2",
+    "gatsby-plugin-image": "^1.13.0",
+    "gatsby-plugin-layout": "^2.13.0",
+    "gatsby-plugin-sharp": "^3.13.0",
+    "gatsby-plugin-typescript": "^3.13.0",
+    "gatsby-remark-autolink-headers": "^4.10.0",
+    "gatsby-remark-mermaid": "^2.1.0",
+    "gatsby-remark-numbered-footnotes": "^1.0.1",
+    "gatsby-source-filesystem": "^3.13.0",
+    "gatsby-transformer-bibtex": "^0.1.3",
+    "gatsby-transformer-json": "^3.13.0",
+    "gatsby-transformer-sharp": "^3.13.0",
+    "listify": "^1.0.3",
+    "moment": "^2.29.1",
+    "moment-duration-format": "^2.3.2",
+    "prop-types": "^15.7.2",
+    "react": "^17",
+    "react-dom": "^17",
+    "react-flow-renderer": "9.6.7",
+    "react-player": "^2.9.0",
+    "ts-node": "^10.2.1",
+    "url-join": "^4.0.1",
+    "use-debounce": "^7.0.0",
+    "xss": "^1.0.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@types/moment-duration-format": "^2.2.3",
+    "@types/node": "^16.7.10",
+    "@types/react": "^17.0.19",
+    "@types/react-dom": "^17.0.9",
+    "eslint-webpack-plugin": "^3.0.1",
+    "gatsby-plugin-page-creator": "^3.13.0",
+    "gatsby-plugin-typegen": "^2.2.4",
+    "prettier": "^2.3.2",
+    "puppeteer": "^10.2.0",
+    "typescript": "^4.4.2"
+  },
+  "workspaces": {
+    "nohoist": [
+      "concurrently"
+    ]
+  },
+  "keywords": [
+    "website",
+    "none"
+  ],
+  "license": "All rights reserved.",
+  "scripts": {
+    "clean": "gatsby clean",
+    "bootstrap": "yarn build",
+    "start": "yarn develop",
+    "build": "cross-env NODE_OPTIONS=\"--no-deprecation\" gatsby build",
+    "format-all": "yarn format \"**/*.{ts,tsx,scss,json}\"",
+    "develop": "cross-env NODE_OPTIONS=\"--no-deprecation\" gatsby develop --port 8008",
+    "serve": "gatsby serve",
+    "deploy": "gatsby-plugin-s3 deploy --yes",
+    "ncu": "ncu",
+    "ncu:chakra": "ncu -t greatest '/.*chakra.*/'",
+    "lint": "yarn run lint:source && yarn run lint:format",
+    "lint:source": "eslint . --ignore-path .gitignore --ext .ts,.tsx,.js,.jsx",
+    "lint:format": "prettier --check --ignore-path .gitignore '**/*.{ts,tsx,js,jsx,json}'",
+    "format": "prettier --write --ignore-path .gitignore '**/*.{ts,tsx,js,jsx,json}'"
+  }
+}

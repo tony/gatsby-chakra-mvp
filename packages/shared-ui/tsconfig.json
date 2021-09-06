@@ -1,0 +1,7 @@
+{
+  "compilerOptions": {
+    "target": "es2020"
+  },
+  "extends": "../../tsconfig.json",
+  "include": ["src", "types/gatsby-types.stub.d.ts", "../custom-typings/types"]
+}

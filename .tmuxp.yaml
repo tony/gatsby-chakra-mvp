@@ -1,0 +1,16 @@
+session_name: website
+start_directory: ./ # load session relative to config location (project root).
+windows:
+  - window_name: website
+    layout: main-horizontal
+    focus: true
+    options:
+      main-pane-height: 35
+    start_directory: ./
+    panes:
+      - focus: true
+      - pane
+      - pane
+      - shell_command:
+          - "[ -d node_modules ] && yarn"
+          - yarn start
