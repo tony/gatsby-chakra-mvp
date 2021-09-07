@@ -35,8 +35,8 @@
     "version": "npm run build"
   },
   "dependencies": {
-    "@chakra-ui/react": "^1.6.5",
-    "@chakra-ui/theme": "^1.9.2",
+    "@chakra-ui/react": "^1.6.7",
+    "@chakra-ui/theme": "^1.10.1",
     "@emotion/react": "^11.4.1",
     "gatsby": "^3.13.0",
     "gatsby-plugin-next-seo": "^1.8.0",

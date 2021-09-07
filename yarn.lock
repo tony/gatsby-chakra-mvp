@@ -1456,7 +1456,7 @@
   dependencies:
     "@chakra-ui/utils" "^1.7.0"
 
-"@chakra-ui/react@^1.6.5":
+"@chakra-ui/react@^1.6.7":
   version "1.6.7"
   resolved "https://registry.yarnpkg.com/@chakra-ui/react/-/react-1.6.7.tgz#1d5fa2a02aa1a2c1516966e5bfc12d528452f723"
   integrity sha512-5klvvvoPN1j3t1842Sg7qYzQu/ENXHMeccL3r34Y4xJG3SrM5ebyjyGmqGN7WqRoXzPhG25UInA9LJDEvzjbLA==
@@ -1623,7 +1623,7 @@
     "@types/tinycolor2" "1.4.2"
     tinycolor2 "1.4.2"
 
-"@chakra-ui/theme@1.10.1", "@chakra-ui/theme@^1.9.2":
+"@chakra-ui/theme@1.10.1", "@chakra-ui/theme@^1.10.1":
   version "1.10.1"
   resolved "https://registry.yarnpkg.com/@chakra-ui/theme/-/theme-1.10.1.tgz#e527f5533f0c0227b64a54e87f6ec2b5f7d6a45e"
   integrity sha512-YvncILdCZq8Ryzcvxz3jqM2lE/QLv7IbjbohHOk0FblkJNnZDaeRuVTKITrubCS4zyfHewmSSkbAfnch2+BERw==
@@ -4248,7 +4248,7 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@^16.7.10":
+"@types/node@*", "@types/node@^16.7.11":
   version "16.7.11"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.7.11.tgz#5877b3ab359af251fd413517be2d4265b7fea9a9"
   integrity sha512-OtOGO+DYmNNqJQG9HG4e5a6iqoRcNfdCf4ha3div7XF5w/uOa3YVpb5aRGClwSDKLmfOysv2hFIvoklffnQi4w==
@@ -4319,7 +4319,7 @@
     hoist-non-react-statics "^3.3.0"
     redux "^4.0.0"
 
-"@types/react@*", "@types/react@^17.0.19":
+"@types/react@*", "@types/react@^17.0.20":
   version "17.0.20"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-17.0.20.tgz#a4284b184d47975c71658cd69e759b6bd37c3b8c"
   integrity sha512-wWZrPlihslrPpcKyCSlmIlruakxr57/buQN1RjlIeaaTWDLtJkTtRW429MoQJergvVKc4IWBpRhWw7YNh/7GVA==
